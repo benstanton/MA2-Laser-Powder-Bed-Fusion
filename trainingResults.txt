@@ -1,0 +1,54 @@
+New Test Set, seed = 
+10
+with DTNC4: 
+82.164
+%
+with DTNC5: 
+83.9391
+%
+New Test Set, seed = 
+11
+New Test Set, seed = 
+11
+with DTNC4: 
+85.3339
+%
+with DTNC5: 
+83.0516
+%
+New Test Set, seed = 
+12
+with DTNC4: 
+86.0101
+%
+with DTNC5: 
+84.4463
+%
+New Test Set, seed = 
+13
+with DTNC4: 
+84.0237
+%
+with DTNC5: 
+81.9949
+%
+New Test Set, seed = 
+14
+New Test Set, seed = 
+14
+with DTNC4: 
+83.9391
+%
+with DTNC5: 
+83.1361
+%
+New Test Set, seed = 
+15
+New Test Set, seed = 
+15
+with DTNC4: 
+84.8267
+%
+with DTNC5: 
+82.2063
+%

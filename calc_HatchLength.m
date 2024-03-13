@@ -1,6 +1,5 @@
-load('itpAmCaseStudyData5.mat')
 
-% load points
+
 % for each point
 %   check hatch offset (uncertain how to do)
 %   check hatch strategy
@@ -31,7 +30,7 @@ function hatchLength = calcHatchLength(x, y, z, index)
     z_adj = round(z/0.05)*0.05 ; % rounds to nearest 0.05
     layer = (z_adj/0.05) + 1;
     
-    if (z <= 7.01) %big cube
+    if (z <= 7) %big cube
         theta = 31.4038;
         
         if (cast(mod(layer, 2), "logical") == 0) %iseven (positive angle)
