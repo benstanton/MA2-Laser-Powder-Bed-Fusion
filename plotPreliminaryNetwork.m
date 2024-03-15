@@ -1,4 +1,4 @@
-num_features = size(X_scaled,2);        % number of features
+num_features = size(X,2);        % number of features
 num_classes = length(unique(Y));        % number of classes
 
 layers = [
@@ -8,21 +8,6 @@ layers = [
         batchNormalizationLayer         % Batch normalisation
         reluLayer                       % ReLU activation function
         dropoutLayer(0.5) 
-    
-        fullyConnectedLayer(128)          % FC layer
-        batchNormalizationLayer         % Batch normalisation
-        reluLayer                       % ReLU activation function
-        dropoutLayer(0.5) 
-    
-        fullyConnectedLayer(128)          % FC layer
-        batchNormalizationLayer         % Batch normalisation
-        reluLayer                       % ReLU activation function
-        dropoutLayer(0.5) 
-    
-        fullyConnectedLayer(64)          % FC layer
-        batchNormalizationLayer         % Batch normalisation
-        reluLayer                       % ReLU activation function      
-        dropoutLayer(0.5)               % Dropout layer - prob=0.2
         
         fullyConnectedLayer(num_classes) % Fully connected layer
         softmaxLayer                    % softmax output

@@ -77,47 +77,46 @@ xlim('tight')
 
 figure
 %histogram(trainDataMatrix)
+
+wholeMatrix = [trainDataMatrix DTNC_5 hatchLength];
 T = 5;
-b = 4;
+b = 5;
 loopVar = 1;
 titles = ["Cube Num", "Border Label", "Sinter Dur Sum", "Sinter Dur Mean", ...
     "L1 Mean", "M1 Mean", "M2 Mean", "L1 Var", "M1 Var", "M2 Var", "L1 Skew", ...
     "M1 Skew", "M2 Skew", "Laser Spd", "Hatch Spacing", "Engy Dens Mean", ...
-    "Laser Spd Var", "Hatch Spacing Var", "Engy Dens Var"];
+    "Laser Spd Var", "Hatch Spacing Var", "Engy Dens Var", "DTNC1", "DTNC2", "DTNC3", "DTNC4", "DTNC5", "Hatch Len"];
 for v_T = 1:T
    for v_b = 1:b
 
-       if loopVar ~= 20
+       
             subplot(T,b, loopVar)
            
-            histogram (trainDataMatrix(:, loopVar))
+            histogram (wholeMatrix(:, loopVar))
             title(titles(loopVar))
             loopVar = loopVar + 1;
-       end
+       
    end
 end
 
 
-X_scaled = normalize(trainDataMatrix,1); % standardize data 
+X_scaled = normalize(wholeMatrix ,1); % standardize data 
 
 figure
 %histogram(trainDataMatrix)
 T = 5;
 b = 4;
 loopVar = 1;
-titles = ["Cube Num", "Border Label", "Sinter Dur Sum", "Sinter Dur Mean", ...
-    "L1 Mean", "M1 Mean", "M2 Mean", "L1 Var", "M1 Var", "M2 Var", "L1 Skew", ...
-    "M1 Skew", "M2 Skew", "Laser Spd", "Hatch Spacing", "Engy Dens Mean", ...
-    "Laser Spd Var", "Hatch Spacing Var", "Engy Dens Var"];
+
 for v_T = 1:T
    for v_b = 1:b
 
-       if loopVar ~= 20
+       
             subplot(T,b, loopVar)
            
             histogram (X_scaled(:, loopVar))
             title(titles(loopVar))
             loopVar = loopVar + 1;
-       end
+       
    end
 end

@@ -46,29 +46,14 @@ layers = [
     reluLayer                       % ReLU activation function
     dropoutLayer(0.5) 
 
-    fullyConnectedLayer(128)          % FC layer
-    batchNormalizationLayer         % Batch normalisation
-    reluLayer                       % ReLU activation function
-    dropoutLayer(0.5) 
-
-    fullyConnectedLayer(128)          % FC layer
-    batchNormalizationLayer         % Batch normalisation
-    reluLayer                       % ReLU activation function
-    dropoutLayer(0.5) 
-
-    fullyConnectedLayer(64)          % FC layer
-    batchNormalizationLayer         % Batch normalisation
-    reluLayer                       % ReLU activation function      
-    dropoutLayer(0.5)               % Dropout layer - prob=0.2
-    
     fullyConnectedLayer(num_classes) % Fully connected layer
     softmaxLayer                    % softmax output
     classificationLayer]; 
 
 % training options - note the L2Regularization option
 options = trainingOptions("adam", ...
-    "MiniBatchSize",128, ...
-    "MaxEpochs",128, ...
+    "MiniBatchSize",512, ...
+    "MaxEpochs",64, ...
     "InitialLearnRate",1e-3, ...
     "L2Regularization",0.0001, ...
     "ValidationData",{X_val,Y_val}, ...

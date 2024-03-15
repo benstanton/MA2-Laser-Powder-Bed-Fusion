@@ -40,22 +40,16 @@ function hatchLength = calcHatchLength(x, y, z, index)
 
     else % small cube (impose bottom right/topright cubes onto bottom left cube)
         theta = 16.077;
-
         if (x <= 2.01 && y <= 2.01 ) %bottom left cube
             % do nothing
-
         elseif (x >= 7.99 && y <= 2.01 ) % bottom right cube
-
-            x = max(x - 8, 0);
-            
+            x = max(x - 8, 0);        
         elseif (x >= 7.99 && y >= 7.99) % top right cube
-
             x = max(x - 8, 0);
             y = max(y-8, 0);
 
         else
             fprintf("ERROR2: %d\n", index) % catch edge cases
-
         end
 
 
@@ -71,7 +65,6 @@ function hatchLength = calcHatchLength(x, y, z, index)
            
 
         elseif(cast(mod(layer, 2), "logical") == 1) %isodd (negative angle)
-
             if (y < -3.4698*x + 2)         
                 hatchLength = (y/cosd(theta)) + (x/(cosd(90-theta)));
             elseif (y > -3.4698*x + 6.9396)              
