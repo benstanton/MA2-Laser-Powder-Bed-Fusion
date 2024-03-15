@@ -1,54 +1,64 @@
+New Test Set, seed =  15
+CV with DTNC4 + hatchLength: 
+0.89643
+New Test Set, seed =  15
+CV with DTNC4 + hatchLength: 
+0.76855
+New Test Set, seed =  15
+CV with DTNC4 + hatchLength: 
+0.89833
+New Test Set, seed =  15
+CV with DTNC4 + hatchLength: 
+0.82921
+New Test Set, seed =  15
+CV with DTNC4 + hatchLength: 
+0.87001
 New Test Set, seed = 
-10
-with DTNC4: 
-82.164
-%
-with DTNC5: 
-83.9391
-%
-New Test Set, seed = 
-11
-New Test Set, seed = 
-11
-with DTNC4: 
-85.3339
-%
-with DTNC5: 
-83.0516
-%
-New Test Set, seed = 
-12
-with DTNC4: 
-86.0101
-%
-with DTNC5: 
-84.4463
-%
-New Test Set, seed = 
-13
-with DTNC4: 
-84.0237
-%
-with DTNC5: 
-81.9949
-%
-New Test Set, seed = 
-14
-New Test Set, seed = 
-14
-with DTNC4: 
-83.9391
-%
-with DTNC5: 
-83.1361
+15
+with DTNC5 + hatchLength: 
+89.5137
 %
 New Test Set, seed = 
 15
 New Test Set, seed = 
 15
-with DTNC4: 
-84.8267
+New Test Set, seed = 
+15
+with DTNC5 + hatchLength: 
+89.3446
 %
-with DTNC5: 
-82.2063
+New Test Set, seed = 
+15
+New Test Set, seed =  15
+New Test Set, seed = 
+15
+with DTNC5 + hatchLength: 
+89.0955
 %
+New Test Set, seed = 
+15
+with DTNC5 + hatchLength: 
+87.574
+%
+New Test Set, seed =  15
+CV with DTNC4 + hatchLength: 
+0.80583
+New Test Set, seed =  15
+CV with DTNC4 + hatchLength: 
+0.87429
+New Test Set, seed =  15
+New Test Set, seed =  15
+New Test Set, seed =  15
+CV with DTNC4 + hatchLength: 
+0.87534
+New Test Set, seed =  15
+CV with DTNC4 + hatchLength: 
+0.80097
+New Test Set, seed = 
+15
+New Test Set, seed =  15
+CV with DTNC4 + hatchLength: 
+0.89542
+New Test Set, seed =  15
+New Test Set, seed = 
+15

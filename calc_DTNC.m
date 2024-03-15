@@ -9,19 +9,14 @@
 %load('itpAmCaseStudyData5.mat')
 
 
-DTNC_4 = zeros(4733, 4);
-DTNC_5 = zeros(4733, 5);
+DTNC_4 = zeros(length(trainCubeCoordData), 4);
+DTNC_5 = zeros(length(trainCubeCoordData), 5);
 
 for i = 1:length(trainCubeCoordData(:, 1))
     DTNC_4(i, :) = calc_DTNC_4(trainCubeCoordData(i, 2), trainCubeCoordData(i, 3), trainCubeCoordData(i, 4));
     DTNC_5(i, :) = calc_DTNC_5(trainCubeCoordData(i, 2), trainCubeCoordData(i, 3), trainCubeCoordData(i, 4), i);
 end
 
-[M, I] = min(DTNC_5(:, 5))
-[M, I] = min(DTNC_5(:, 4))
-[M, I] = min(DTNC_5(:, 3))
-[M, I] = min(DTNC_5(:, 2))
-[M, I] = min(DTNC_5(:, 1))
 
 function borders = calc_DTNC_5(x, y, z, i)
 

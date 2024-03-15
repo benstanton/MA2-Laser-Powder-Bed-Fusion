@@ -1,0 +1,8 @@
+New Test Set, seed =  15
+5-Fold CV Acc with DTNC5 + hatchLength:  0.89943
+5-Fold CV Acc with DTNC4 + hatchLength:  0.90281
+5-Fold CV Acc with No DTNC + hatchLength:  0.90471
+5-Fold CV Acc with DTNC5 + No hatchLength:  0.91063
+5-Fold CV Acc with DTNC4 + No hatchLength:  0.91359
+5-Fold CV Acc with No DTNC + No hatchLength:  0.90577
+

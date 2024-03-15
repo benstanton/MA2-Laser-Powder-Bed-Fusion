@@ -1,23 +1,6 @@
 
 
-% for each point
-%   check hatch offset (uncertain how to do)
-%   check hatch strategy
-%       Odd Z layers have a negative hatch angle
-%       Even Z layers have a positive hatch angle
-%
-%   check point region (big or small cubes)
-%   use above to calculate length
-
-
-% TOOD:
-% check RE actual theta value (slides appear to be wrong)
-% does layer 0 exist? check my method for calculating odd/even layer
-
-% ASSUMPTION: zero layer exists, becomes "first layer"
-
-
-hatchLength = zeros(4733, 1);
+hatchLength = zeros(length(trainCubeCoordData), 1);
 
 
 for i = 1:length(trainCubeCoordData(:, 1))
@@ -27,7 +10,7 @@ end
 function hatchLength = calcHatchLength(x, y, z, index)
     hatchLength = 0;
 
-    z_adj = round(z/0.05)*0.05 ; % rounds to nearest 0.05
+    z_adj = floor(z./0.05).*0.05 ; % rounds down to nearest 0.05
     layer = (z_adj/0.05) + 1;
     
     if (z <= 7) %big cube
